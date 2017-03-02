@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ " /stylesheets/main.css " | prepend:site.baseurl }}">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" href="{{ " /favicon.ico " | prepend:site.baseurl }}">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    {% include head.html %}
+</head>
+
+<body>
+    {% if site.data.theme.color == "default" %}
+    <div class="navbar navbar-default navbar-static-top">
+        {% else %}
+        <div class="navbar navbar-inverse navbar-static-top">
+            {% endif %}
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-toggle-wrapper visible-xs">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".js-navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <a href="{{ " / " | prepend:site.baseurl }}" class="navbar-brand">{{ site.title }}</a>
+                </div>
+                <div class="collapse navbar-collapse js-navbar-collapse">
+                    <ul class="navbar-nav nav" data-purplecoat="shiori" data-purplecoat-label="nav.html">
+                        {% include nav.html %}
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+
+            <div class="row">
+                {% if page.hide_sidebar or site.data.theme.hide_sidebar %}
+                <div class="col-sm-12">
+                    {{ content }}
+                </div>
+                {% else %}
+                <div class="col-sm-8">
+                    {{ content }}
+                </div>
+                <!--   <div class="col-sm-4">
+           {% include sidebar.html %}
+          </div> -->
+                {% endif %}
+
+                <div class="col-sm-6">
+
+                    <h1 class="display-4 my-4"><strong>Amit Kalani</strong></h1>
+
+                        <img src="img/amit.jpg" class="img-fluid img-rounded" alt="Amit Kalani"> 
+
+                </div>
+
+                <div class="col-sm-6">
+
+                    <h2 class="display-4 my-4 text-muted">amitkalani1</h2>
+
+                    <div class="list-group">
+
+                        <a href="https://github.com/amitkalani1" class="list-group-item list-group-item-action"><b><i class="fa fa-github" aria-hidden="true"></i> GitHub-Build software better, together</b><br>amitkalani1</a>
+
+                        <a href="https://www.reddit.com/user/amitkalani1" class="list-group-item list-group-item-action"><b><i class="fa fa-reddit" aria-hidden="true"></i> Reddit-Front Page of Internet</b><br>amitkalani1</a>
+
+                        <a href="https://www.peerlyst.com/users/amitkalani" class="list-group-item list-group-item-action"><b><i class="fa fa-users"></i> Peerlyst-Social Network for Security Professionals</b><br>amitkalani1</a>
+
+                        <a href="https://www.telegram.me/amitkalani1" class="list-group-item list-group-item-action"><b><i class="fa fa-telegram" aria-hidden="true"></i> Telegram-A new era of messaging</b><br>amitkalani1</a>
+
+                        <a href="http://webchat.freenode.net/?channels=r_netsec" class="list-group-item list-group-item-action"><b><i class="fa fa-envelope-open-o"></i> IRC-Netsec-</b>amitkalani1</a>
+
+                        <a href="https://keybase.io/amitkalani1" class="list-group-item list-group-item-action"><b><i class="fa fa-key" aria-hidden="true"></i> Keybase-Crypto for everyone</b><br>amitkalani1</a>
+
+                        <!-- <a href="https://onename.com/amitkalani1" class="list-group-item list-group-item-action">Onename</a> -->
+
+                    </div>
+                </div>
+            </div>
+
+    <h2 class="my-4">Favorite tools and projects</h2>
+
+  
+
+        <div class="col-sm-6">
+	
+
+
+	  <div class="row">
+    <h3 class="my-4">Security</h3>
+
+            <div class="card mb-3">
+
+                <div class="card-header">Debugger</div>
+
+                <div class="list-group list-group-flush">
+
+                    <a href="https://www.immunityinc.com/products/debugger/" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">Immunity Debugger</h4>
+
+                </a>
+
+              </div>
+
+            </div>
+
+              
+
+            <div class="card mb-3">
+
+              <div class="card-header">Frameworks</div>
+
+              <div class="list-group list-group-flush">
+
+                <a href="http://www.samurai-wtf.org/" class="list-group-item list-group-item-action">
+
+                  <h4 class="list-group-item-heading">Samurai WTF (Web Testing Framework)</h4>
+
+                </a>
+
+                    <a href="https://www.metasploit.com/" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">Metasploit Pentesting Framework</h4>
+                      </a>
+                </div>
+
+            </div>
+
+    <div class="card mb-3">
+
+                      <div class="card-header">Http Proxy</div>
+
+                      <div class="list-group list-group-flush">
+
+                        <a href="https://www.charlesproxy.com/" class="list-group-item list-group-item-action">
+                                  <h4 class="list-group-item-heading">Charles Proxy</h4>
+
+                        </a>
+                      </div>
+                </div>
+            <div class="card mb-3">
+
+                <div class="card-header">Distro's</div>
+
+                <div class="list-group list-group-flush">
+
+                    <a href="https://www.kali.org/" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">Kali Linux</h4>
+
+                    </a>
+
+                    <a href="https://tails.boum.org/" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">TAILS Live OS</h4>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="card mb-3">
+
+                <div class="card-header">Collaboration</div>
+
+                <div class="list-group list-group-flush">
+
+                    <a href="https://www.faradaysec.com" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">Faraday</h4>
+
+                    </a>
+
+                    <a href="https://slack.com/" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">Slack</h4>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+</div>
+
+        <div class="col-sm-6">
+
+	<div class="row">
+	
+    <h3 class="my-4">General</h3>
+
+            <div class="card mb-3">
+
+                <div class="card-header">Text editor</div>
+
+                <div class="list-group list-group-flush">
+
+                    <a href="https://atom.io" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading mb-1">Atom</h4>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="card mb-3">
+
+                <div class="card-header">Web browser</div>
+
+                <div class="list-group list-group-flush">
+
+
+                    <a href="https://www.brave.com" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">Brave</h4>
+
+                    </a>
+
+                    <a href="https://torproject.org/" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">Tor</h4>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+                  <div class="card mb-4">
+
+                      <div class="card-header">Bitcoin Wallet</div>
+
+                      <div class="list-group list-group-flush">
+
+                        <a href="https://www.zebpay.com/" class="list-group-item list-group-item-action">
+
+                          <h4 class="list-group-item-heading">Zebpay</h4>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="card mb-3">
+
+                <div class="card-header">Decentralization</div>
+
+                <div class="list-group list-group-flush">
+
+                    <a href="https://safenetwork.org" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">SAFE Network</h5>
+
+            </a>
+
+            <a href="https://zeronet.io" class="list-group-item list-group-item-action">
+
+              <h4 class="list-group-item-heading">ZeroNet</h5>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+       <!--     <div class="card mb-3">
+
+                <div class="card-header">p2p client</div>
+
+                <div class="list-group list-group-flush">
+
+                    <a href="https://webtorrent.io/" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">WebTorrent</h4>
+
+                    </a>
+
+                </div>
+
+            </div> -->
+
+            <div class="card mb-3">
+
+                <div class="card-header">Productivity tools</div>
+
+                <div class="list-group list-group-flush">
+
+                    <a href="https://en.todoist.com/" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">Todoist</h4>
+
+                    </a>
+
+                    <a href="https://justgetflux.com/" class="list-group-item list-group-item-action">
+
+                        <h4 class="list-group-item-heading">F.lux</h4>
+
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+      </div>
+                <div class="row footer">
+                    <div class="col-sm-12 text-center">
+                        {% include footer.html %}
+                    </div>
+                </div>
+            </div>
+
+            <script src="{{ " /javascripts/jquery.min.js " | prepend:site.baseurl }}"></script>
+            <script src="{{ " /javascripts/bootstrap.min.js " | prepend:site.baseurl }}"></script>
+
+</body>
+
+</html>
