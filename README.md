@@ -4,7 +4,7 @@
 
 **Note:** If you're not familiar with Jekyll, please read up on [Jekyll's documentation](http://jekyllrb.com/) first.
 
-[Fork this repo](http://github.com/amitkalani1/personal-website/fork), clone it, and then run:
+[Fork this repo](http://github.com/amitkalani1/amitkalani1.github.io/fork), clone it, and then run:
 
 ```
 bundle install
@@ -16,7 +16,7 @@ bundle install
 jekyll serve --watch
 ```
 
-Once the server is started,go to [http://localhost:4000](http://localhost:4000
+Once the server is started,go to [http://localhost:4000](http://localhost:4000)
 
 ### Required
 
